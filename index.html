@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <title>Mi Portafolio</title>
+    <link rel="icon" type="image/png" href="Ayme-Macías.jpg">
+    <link href="styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald&display=swap" rel="stylesheet"/>
+  </head>
+  <body>
+    <header>
+      <img src="Ayme-Macías.jpg" class="header-img" alt="Fotografía personal">
+      <h1 class="header"> Jeckye Ayme Macías Saldarriaga </h1>
+      <h2 class="subtitle"> 4to Nivel "B" </h2>
+      <nav>
+        <ul class="navigation">
+          <li class="nav-item" >
+            <a href="#1"> Acerca de </a> 
+          </li>
+          <li class="nav-item">
+            <a href="#2"> Mis Proyectos </a>
+          </li>
+          <li class="nav-item">
+            <a href="#3"> Contacto </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section>
+      <h2 class="header" id="1"> Acerca de </h2>
+      <div>
+        <p class="intro">
+        Hola!🤗 Mi nombre es Ayme, tengo 21 años y nací en Esmeraldas🤩. Por cuestiones de estudio me 
+        mudé a Manta para estudiar en la Universidad Laica ELoy Alfaro de Manabí. Me gustan los animales 
+        y entre mis hobbies está escuchar música y cantar🎶, ver películas de terror, e ir a la playa🏖️ 
+        con amigos/as. Me gusta ser responsable, y siempre me ha llamado la atención la robótica🤖 y el
+        diseño de páginas web. Uno de mis sueños es poder viajar por el mundo✈️. En este espacio podrás 
+        ver algunos de mis proyectos que tengo en mente cumplir😍🤞, espero te llame la atención alguno 
+        de ellos y te animes a contactarme para poder conversar📲.
+        </p>
+        <ul class="social-media">
+            <li>
+              <a href="https://www.twitter.com" rel="noopener" target="_blank">
+              <img src="logo-twitter.png" alt="Twitter"/>
+              <p class="social-link-text">Facebook</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/" rel="noopener" target="_blank">
+              <img src="logo-github.png" alt="Github"/>
+              <p class="social-link-text">Github</p>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" rel="noopener" target="_blank">
+              <img src="logo-linkedin.png" alt="Linkedin"/>
+              <p class="social-link-text">Linkedin</p>
+              </a>
+            </li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="header" id="2"> Mis Proyectos</h2>
+      <div class="carousel">
+        <button class="arrow arrow-left" aria-label="Backward button"></button>
+          <div class="window">
+            <ul class="project-container">
+
+              <li class="project1-container"><button class="project1
+              project"><img src="proyecto-graduacion.jpg" class="project-img"
+              alt="Mi primer proyecto"></button></li>
+
+              <li class="project2-container"><button class="project2
+              project"><img src="proyecto-diseñoweb.jpg" class="project-img"
+              alt="Mi segundo proyecto"></button></li>
+
+              <li class="project3-container"><button class="project3
+              project"><img src="proyecto-robotica.jpg" class="project-img"
+              alt="Mi tercer proyecto"></button></li>
+
+              <li class="project4-container" aria-hidden="true"><button class="project4
+              project"tabindex="-1"><img src="proyecto-refugio.jpg" class="project-img"
+              alt="Mi cuarto proyecto"></button></li>
+
+              <li class="project5-container" aria-hidden="true"><button class="project5
+              project" tabindex="-1"><img src="proyecto-viaje.jpg" class="project-img"
+              alt="Mi quinto proyecto"></button></li>
+              </ul>
+           </div>
+           <button class="arrow arrow-right" aria-label="Forward button"></button>
+          </div>
+    </section>
+    </main>
+
+<footer class="contact-section">
+  <h2 class="header" id="3">Contacto</h2>
+  <p class="intro">Para manderme un mensaje puedes usar el siguiente formulario</p>
+  <form class="form-container">
+  <label class="form-label">Nombre</label><input type="text" aria-label="nombre" id="name"/>
+  <span id="name-error" aria-live="assertive"></span>
+  <br/>
+  <label class="form-label">Correo</label><input type="text" aria-label="correo"/> <br/>
+  <label class="message-input">Mensaje<input type="text"  arialabel="mensaje"/> <br/></label>
+  <button class="send-button">Enviar</button>
+  </form>
+</footer>
+
+    <div class="notification" aria-live="assertive"></div>
+    <div class="modal-container">
+      <div class="modal">
+        <h2 class="header" id="modal-header" tabindex="0">Mis proyectos</h2>
+        <img src="proyecto-graduacion.jpg" class="modal-project-image"
+        alt="Pantallazo del proyecto"/>
+        <button class="modal-button">Cerrar</button>
+      </div>
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+  </body>
+</html>
